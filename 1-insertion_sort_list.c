@@ -20,7 +20,7 @@ void node_swap(listint_t *a, listint_t *b)
 }
 
 /**
- * insertion_sort - sorts a doubly linked list of integers
+ * insertion_sort_list - sorts a doubly linked list of integers
  * @list: adress of a pointer to the head node
  *
  * Return: nothing
