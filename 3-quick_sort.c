@@ -63,7 +63,7 @@ void sorting(int *array, size_t size, ssize_t first, ssize_t last)
 	if (first < last)
 	{
 		pivot = Lomuto_partition(array, size, first, last);
-		sorting(array, size, first, pivot -1);
+		sorting(array, size, first, pivot - 1);
 		sorting(array, size, pivot + 1, last);
 	}
 }
@@ -79,6 +79,5 @@ void quick_sort(int *array, size_t size)
 {
 	if (array == NULL || size == 0)
 		return;
-	else
-		sorting(array, size, 0, size - 1);
+	sorting(array, size, 0, size - 1);
 }
