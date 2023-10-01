@@ -62,9 +62,9 @@ void sorting(int *array, size_t size, ssize_t first, ssize_t last)
 
 	if (first < last)
 	{
-		pivot = lomuto_partition(array, size, first, last);
+		pivot = Lomuto_partition(array, size, first, last);
 		sorting(array, size, first, pivot -1);
-		sorting(array, size, pivot + 1; last);
+		sorting(array, size, pivot + 1, last);
 	}
 }
 
